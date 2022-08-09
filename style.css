@@ -202,6 +202,26 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
+/* card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #B5D7E9;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    height: 220px;
+    width: 300px;
+    margin-left: 32px;
+    gap: 10px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
 /* icon */
 .icon {
     width: 60px;
@@ -215,25 +235,8 @@ nav {
 .familia img {
     width: 70%;
 }
-/* card */
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: #B5D7E9;
-    padding: 1rem 1rem;
-    border-radius: 8px;
-    max-height: 270px;
-    margin-left: 32px;
-    gap: 10px;
-    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.25);
-}
 
-.card:first-child {
-    margin-left: 0;
-}
-
+/* texto */
 h3 {
     font-family: 'Work Sans', sans-serif;  
     font-size: 100%;
@@ -257,6 +260,12 @@ span {
     font-size: 80%;
     color: #1E62A5;
     cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .card {
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 750px) {

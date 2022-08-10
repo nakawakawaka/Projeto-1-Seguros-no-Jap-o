@@ -524,6 +524,7 @@ footer a {
 @media screen and (max-width:1500px) {
     .footer-content p {
         max-width: 300px;
+        margin: 0 auto;
     }
 }
 

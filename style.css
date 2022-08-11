@@ -453,6 +453,24 @@ span {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .caixa {
+        max-width: 100%;
+        margin: 3%;
+        margin-bottom: 80px;
+    }
+
+    .form {
+        margin: 3% auto;
+        width: 100%;
+    }
+
+    .form-control input {
+        max-width: 100%;
+        min-width: 200px;
+    }
+}
+
 /* rodape */
 footer {
     background-color: #B5D7E9;
@@ -541,6 +559,10 @@ footer a {
 
     .footer-content h3 {
         text-align: center;
+    }
+
+    .footer-content a {
+        margin: 0;
     }
 }
 

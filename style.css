@@ -9,6 +9,7 @@
 
 /* Menu */
 body {
+    overflow-x: hidden;
     font-size: 100%;
     background-color: #fcfcfc;
 }

@@ -11,7 +11,6 @@ class MobileNavBar {
 
     animateLinks() {
         this.navLinks.forEach((link, index) => {
-            console.log(index)
             link.style.animation
               ?(link.style.animation = "")
               :(link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3 }s`);
@@ -26,6 +25,11 @@ class MobileNavBar {
 
     addClickEvent() {
         this.mobileMenu.addEventListener("click", this.handleClick);
+        this.navList.addEventListener("click", () => {
+                this.navList.classList.remove(this.activeClass);
+                this.mobileMenu.classList.remove(this.activeClass);
+                this.animateLinks();
+        });
     }
 
     init() {
@@ -39,7 +43,7 @@ class MobileNavBar {
 const mobileNavBar = new MobileNavBar(
     ".mobile-menu",
     ".nav-list",
-    ".nav-list li",
+    ".nav-list li"
 );
 mobileNavBar.init();
 
